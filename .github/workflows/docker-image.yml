@@ -29,10 +29,12 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t jpcastro087/graphql-actions:1.1.1 .
+        docker build -t jpcastro087/graphql-actions:latest .
 
     - name: Push Docker Image
       run: |
         docker push jpcastro087/graphql-actions:1.1.1
+        docker push jpcastro087/graphql-actions:latest
 
 
 
